@@ -134,7 +134,24 @@ function isFemale(cat) {
 
 
 function handleAdopt(cat) {
-  console.log(`Adopting ${cat.name}!`);
+  const conformationMessage = `CONGRATULATIONS!! You have adopted ${cat.name}!!`;
+  alert(conformationMessage);
+
+  const cardRemoval = document.querySelector(`[data-cat-id="${cat.id}"]`);
+  cardRemoval.remove();
+
+  triggerConfetti();
+}
+
+function triggerConfetti() {
+  const confettiConfig = {
+    particleCount: 1000,
+    spread: 100,
+    origin: { y: 0.6},
+  };
+  
+  confetti(confettiConfig);
+
 }
 
 function handleDonate(cat) {
