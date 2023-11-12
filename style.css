@@ -3,6 +3,7 @@ body {
     font-family: 'Pathway Gothic One', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #d46b03;
 }
 
 header {
@@ -85,7 +86,7 @@ nav option {
 
 
 .card {
-    border: 1px solid #ddd;
+    border: 6px solid black;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
