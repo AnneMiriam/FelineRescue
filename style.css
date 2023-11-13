@@ -93,4 +93,11 @@ nav a {
     border-radius: 4px; 
 }
 
+.button {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
 /* Add more styles as needed */
