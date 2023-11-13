@@ -25,21 +25,22 @@
     <nav>
         <ul>
             
-            <li class="dropdown">
-                <a href="#">Search by Age</a>
-                <div class="dropdown-content">
-                    <a href="#">Kitten: under 1 year</a>
-                    <a href="#">Adult: 1-8 years</a>
-                    <a href="#">Senior: 9 years & over</a>
-                </div>
-            </li>
-            <li class="dropdown">
+            <!-- <li class="dropdown"> -->
+                <label for="select-age">Search by Age</label>
+                <select id="dropdown-content" name="select-age">
+                    <option value="">Choose an age group</option>
+                    <option value="kitten">Kitten: under 1 year</option>
+                    <option value="adult">Adult: 1-8 years</option>
+                    <option value="senior">Senior: 9 years & over</option>
+                </select>
+            <!-- </li> -->
+            <!-- <li class="dropdown">
                 <a href="#">Search by:</a>
                 <div class="dropdown-content">
                     <a href="#">Companion</a>
                     <a href="#">Working</a>
                 </div>
-            </li>
+            </li> -->
            
         </ul>
     </nav>

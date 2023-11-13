@@ -21,13 +21,13 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+/* nav ul li {
 
     display: inline;
     margin-right: 20px;
-}
+} */
 
-nav a {
+nav option {
     text-decoration: none;
     color: #393939;
 }
