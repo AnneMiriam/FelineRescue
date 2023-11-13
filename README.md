@@ -1,5 +1,5 @@
 # FelineRescue
-“As a [user], I want to be able to [do a thing], so [reason for the feature].”
+
 
 As a user I want to navigate an adoption page for a cat rescue. I would also like to be able to search for cats of a certain age group
  - All available cats should appear on page load.
