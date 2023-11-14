@@ -44,7 +44,7 @@ function createCatCard(cat) {
 
   const donations = document.createElement('p');
   donations.classList.add('donations');
-  donations.textContent = `Donations: ${cat.donations}`;
+  donations.textContent = `Donations: $${cat.donations}`;
 
   const adoptButton = document.createElement('button');
   adoptButton.textContent = 'ADOPT';
@@ -67,20 +67,35 @@ function createCatCard(cat) {
 
   return card;
 }
+//* Anne - update to link all dropdowns
+let filteredCats;
+function filteredFilters() {
+  filteredCats = catsArr.slice();
+  if (selectAge){
+    filteredCats = filteredCats.filter(cat => whatAge(cat) === selectAge);
+  }
+  if (selectCompanion){
+    filteredCats = filteredCats.filter(cat => isCompanion(cat) === selectCompanion);
+  }
+  if (selectGender){
+    filteredCats = filteredCats.filter(cat => isFemale(cat) === selectGender);
+  }
+  if (filteredCats.length === 0) {
+    alert("No cats fit that description! Please try again!")
+  }
+  renderCats(filteredCats);
+}
 
 // * Anne - create filter for age
 const dropdownAge = document.getElementById('dropdown-age');
 let selectAge = '';
 
 dropdownAge.addEventListener('change', (e) => {
-  console.log(e.target.value)
   selectAge = e.target.value;
-  let filteredCats = catsArr.filter(cat => whatAge(cat) === selectAge);
-  // filterByAge(selectAge)
-  renderCats(filteredCats);
+  // let filteredCats = catsArr.filter(cat => whatAge(cat) === selectAge);
+  // renderCats(filteredCats);
+  filteredFilters();
 })
-
-
 //  I need a function that will return the values of kitten,
 //   adult, or senior, that I can pass into the filter()
 //   so it matches the e.target.value when selecting dropdown
@@ -102,8 +117,9 @@ let selectCompanion = '';
 
 dropdownComp.addEventListener('change', (e) => {
   selectCompanion = e.target.value;
-  let filterCat = catsArr.filter(cat => isCompanion(cat) === selectCompanion);
-  renderCats(filterCat);
+  // let filterCat = catsArr.filter(cat => isCompanion(cat) === selectCompanion);
+  // renderCats(filterCat);
+  filteredFilters();
 });
 
 function isCompanion(cat){
@@ -120,8 +136,9 @@ let selectGender =  '';
 
 dropdownGender.addEventListener('change', (e) => {
   selectGender = e.target.value;
-  let catFilter = catsArr.filter(cat => isFemale(cat) === selectGender);
-  renderCats(catFilter);
+  // let catFilter = catsArr.filter(cat => isFemale(cat) === selectGender);
+  // renderCats(catFilter);
+  filteredFilters();
 });
 
 function isFemale(cat) {
@@ -141,6 +158,6 @@ function handleDonate(cat) {
   cat.donations = parseInt(cat.donations) + 10;
   const card = document.querySelector(`[data-cat-id="${cat.id}"]`);
   const donationsElement = card.querySelector('.donations');
-  donationsElement.textContent = `Donations: ${cat.donations}`;
+  donationsElement.textContent = `Donations: $${cat.donations}`;
 }
 
