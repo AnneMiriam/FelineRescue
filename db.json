@@ -5,7 +5,8 @@
           "name": "Tigger",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/Rl39SPjDO.png",
-          "age": "5 months",
+          "age": 5,
+          "age2": "months",
           "breed": "Bengal",
           "gender": "MN",
           "companion-status": "companion"
@@ -15,7 +16,8 @@
           "name": "Bubba",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/47s.jpg",
-          "age": "6 years",
+          "age": 6,
+          "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "MN",
           "companion-status": "working"
@@ -25,7 +27,8 @@
           "name": "Titan",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/c2e.jpg",
-          "age": "7 years",
+          "age": 7,
+          "age2": "years",
           "breed": "Maine Coon",
           "gender": "MN",
           "companion-status": "companion"
@@ -35,7 +38,8 @@
           "name": "Fiona",
           "personality": "Hates mornings",
           "url": "https://cdn2.thecatapi.com/images/4qp.jpg",
-          "age": "5 years",
+          "age": 5,
+          "age2": "years",
           "breed": "Siamese mix",
           "gender": "FS",
           "companion-status": "companion"
@@ -45,7 +49,8 @@
           "name": "Spud",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/MTcxMzAzOA.jpg",
-          "age": "3 months",
+          "age": 3,
+          "age2": "months",
           "breed": "Domestic Short-hair",
           "gender": "MN",
           "companion-status": "companion"
@@ -55,7 +60,8 @@
           "name": "Oreo",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/MTUxODcxMQ.jpg",
-          "age": "3 years",
+          "age": 3,
+          "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "FS",
           "companion-status": "companion"
@@ -65,7 +71,8 @@
           "name": "Cleo",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/6ff.jpg",
-          "age": "10 years",
+          "age": 10,
+          "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "FS",
           "companion-status": "working"
@@ -75,7 +82,8 @@
           "name": "Flower",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/b6u.jpg",
-          "age": "8 years",
+          "age": 9,
+          "age2": "years",
           "breed": "Persian",
           "gender": "FS",
           "companion-status": "companion"
@@ -85,9 +93,10 @@
           "name": "Puss in Boots",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/e9u.jpg",
-          "age": "2 years",
+          "age": 2,
+          "age2": "years",
           "breed": "Domestic Long-hair",
-          "gender": "MN",
+          "gender": "FS",
           "companion-status": "companion"
         },
         {
@@ -95,7 +104,8 @@
           "name": "Bobbi",
           "personality": "",
           "url": "https://cdn2.thecatapi.com/images/R68eywp-W.jpg",
-          "age": "6 years",
+          "age": 6,
+          "age2": "years",
           "breed": "Japanese Bobtail",
           "gender": "FS",
           "companion-status": "companion"

@@ -25,22 +25,32 @@
     <nav>
         <ul>
             
-            <!-- <li class="dropdown"> -->
+            <li class="dropdown">
                 <label for="select-age">Search by Age</label>
-                <select id="dropdown-content" name="select-age">
-                    <option value="">Choose an age group</option>
+                <select id="dropdown-age" name="select-age">
+                    <option value="">Choose Age Group</option>
                     <option value="kitten">Kitten: under 1 year</option>
                     <option value="adult">Adult: 1-8 years</option>
                     <option value="senior">Senior: 9 years & over</option>
                 </select>
-            <!-- </li> -->
-            <!-- <li class="dropdown">
-                <a href="#">Search by:</a>
-                <div class="dropdown-content">
-                    <a href="#">Companion</a>
-                    <a href="#">Working</a>
-                </div>
-            </li> -->
+            </li>
+            <li class="dropdown">
+            <label for="select-companion">Search by Companion Status</label>
+                <select id="dropdown-companion" name="select-companion">
+                    <option value="">Choose Companion Status</option>
+                    <option value="companion">Companion</option>
+                    <option value="working">Working Cat</option>
+                </select>
+            </li>
+            <li class="dropdown">
+                <label for="select-gender">Search by Companion Status</label>
+                    <select id="dropdown-gender" name="select-gender">
+                        <option value="">Choose Gender</option>
+                        <option value="male">Male Neutered</option>
+                        <option value="female">Female Spayed</option>
+                    </select>
+                </li>
+            
            
         </ul>
     </nav>
