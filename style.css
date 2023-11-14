@@ -7,11 +7,17 @@ body {
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #d46b03;
     padding: 10px;
     text-align: center;
     /* font-family: 'Playpen Sans', cursive; */
     font-family: 'Kaushan Script', cursive;
+    font-size: xx-large;
+}
+header p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #e2e2e2;
 }
 
 nav ul {
