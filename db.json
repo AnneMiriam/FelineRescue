@@ -3,7 +3,7 @@
         {
           "id": 1,
           "name": "Tigger",
-          "personality": "",
+          "personality": "I am a sweet and loving kitten looking for a home. I like to explore and play with my catnip toys. I would love to meet you!",
           "url": "https://cdn2.thecatapi.com/images/Rl39SPjDO.png",
           "age": 5,
           "age2": "months",
@@ -15,7 +15,7 @@
         {
           "id": 2,
           "name": "Bubba",
-          "personality": "",
+          "personality": "I can be a little spicy with people, but I'm an excellent mouser. I am a working cat, and am looking for a job! If you have a barn or shop for me to keep an eye on, I might be the companion for you!",
           "url": "https://cdn2.thecatapi.com/images/47s.jpg",
           "age": 6,
           "age2": "years",
@@ -27,7 +27,7 @@
         {
           "id": 3,
           "name": "Titan",
-          "personality": "",
+          "personality": "I am a big softie who enjoys the company of people but cats, not so much. So I prefer to be the only cat in a new home.",
           "url": "https://cdn2.thecatapi.com/images/c2e.jpg",
           "age": 7,
           "age2": "years",
@@ -39,7 +39,7 @@
         {
           "id": 4,
           "name": "Fiona",
-          "personality": "Hates mornings",
+          "personality": "I am a sweet and loving little lady looking for a home. I hate mornings, but I like to cuddle and take naps in warm places.",
           "url": "https://cdn2.thecatapi.com/images/4qp.jpg",
           "age": 5,
           "age2": "years",
@@ -51,7 +51,7 @@
         {
           "id": 5,
           "name": "Spud",
-          "personality": "",
+          "personality": "I'm a rambunctious little kitten, looking for my forever home.",
           "url": "https://cdn2.thecatapi.com/images/MTcxMzAzOA.jpg",
           "age": 3,
           "age2": "months",
@@ -63,7 +63,7 @@
         {
           "id": 6,
           "name": "Oreo",
-          "personality": "",
+          "personality": "I am a sweet lady who needs a quieter home. I do well with other cats & older kids who know how to give me space & I need a little more time to adjust to new situations. But once I've warmed up, I love cuddles & napping.",
           "url": "https://cdn2.thecatapi.com/images/MTUxODcxMQ.jpg",
           "age": 3,
           "age2": "years",
@@ -75,7 +75,7 @@
         {
           "id": 7,
           "name": "Cleo",
-          "personality": "",
+          "personality": "I am ok with people I'm familiar with, but scared of strangers. I don't like being handled and I will never be a cuddly companion. I am a working cat, and am looking for a job! If you have a barn or shop for me to keep an eye on, I might be the companion for you!",
           "url": "https://cdn2.thecatapi.com/images/6ff.jpg",
           "age": 10,
           "age2": "years",
@@ -87,7 +87,7 @@
         {
           "id": 8,
           "name": "Flower",
-          "personality": "",
+          "personality": "I am looking for a quiet home without children under the age of 12 years. The ideal home for me will be quiet and patient with me while I come out of my shell, they will love me even if I continue to be a wallflower and will give me comfy places to hide like cat beds and cat trees.",
           "url": "https://cdn2.thecatapi.com/images/b6u.jpg",
           "age": 9,
           "age2": "years",
@@ -99,20 +99,20 @@
         {
           "id": 9,
           "name": "Puss in Boots",
-          "personality": "",
+          "personality": "I'm a very affectionate little kitty looking for a new home. I like to bask in the sun and explore. I would appreciate a home without other cats. It isn't that I don't like other cats, it is that the last one didn't like me and it made me sad and a bit fearful.",
           "url": "https://cdn2.thecatapi.com/images/e9u.jpg",
           "age": 2,
           "age2": "years",
           "breed": "Domestic Long-hair",
           "gender": "FS",
-          "companion-status": "companion"
+          "companion-status": "companion",
           "donations": "0"
 
         },
         {
           "id": 10,
           "name": "Bobbi",
-          "personality": "",
+          "personality": "I am a sweet and loving kitty looking for a home. I like to take naps in the sun, play with other cats and cuddle at night. I can be shy at first but I warm up quickly.",
           "url": "https://cdn2.thecatapi.com/images/R68eywp-W.jpg",
           "age": 6,
           "age2": "years",
