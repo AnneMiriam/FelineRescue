@@ -13,3 +13,10 @@ As a user I want to navigate an adoption page for a cat rescue. I would also lik
 
  - if time allows there will also be a mouseover modal function that allows the user to see more information about the cat
  ![modal concept](Modal.jpg)
+
+
+ **Contributors:**
+ Anne Hastings
+ Ryland Sherman
+
+

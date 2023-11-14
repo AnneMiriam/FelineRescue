@@ -21,13 +21,13 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+/* nav ul li {
 
     display: inline;
     margin-right: 20px;
-}
+} */
 
-nav a {
+nav option {
     text-decoration: none;
     color: #393939;
 }
@@ -71,8 +71,9 @@ nav a {
 }
 
 #cards {
-    display: inline-flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
@@ -81,10 +82,8 @@ nav a {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
-    display: grid;
-    margin: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .card img {
