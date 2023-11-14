@@ -9,7 +9,8 @@
           "age2": "months",
           "breed": "Bengal",
           "gender": "MN",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 2,
@@ -20,7 +21,8 @@
           "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "MN",
-          "companion-status": "working"
+          "companion-status": "working",
+          "donations": "0"
         },
         {
           "id": 3,
@@ -31,7 +33,8 @@
           "age2": "years",
           "breed": "Maine Coon",
           "gender": "MN",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 4,
@@ -42,7 +45,8 @@
           "age2": "years",
           "breed": "Siamese mix",
           "gender": "FS",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 5,
@@ -53,7 +57,8 @@
           "age2": "months",
           "breed": "Domestic Short-hair",
           "gender": "MN",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 6,
@@ -64,7 +69,8 @@
           "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "FS",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 7,
@@ -75,7 +81,8 @@
           "age2": "years",
           "breed": "Domestic Short-hair",
           "gender": "FS",
-          "companion-status": "working"
+          "companion-status": "working",
+          "donations": "0"
         },
         {
           "id": 8,
@@ -86,7 +93,8 @@
           "age2": "years",
           "breed": "Persian",
           "gender": "FS",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         },
         {
           "id": 9,
@@ -98,6 +106,8 @@
           "breed": "Domestic Long-hair",
           "gender": "FS",
           "companion-status": "companion"
+          "donations": "0"
+
         },
         {
           "id": 10,
@@ -108,7 +118,8 @@
           "age2": "years",
           "breed": "Japanese Bobtail",
           "gender": "FS",
-          "companion-status": "companion"
+          "companion-status": "companion",
+          "donations": "0"
         }
     ]
 }
