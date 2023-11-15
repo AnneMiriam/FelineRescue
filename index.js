@@ -171,8 +171,6 @@ let selectGender =  '';
 
 dropdownGender.addEventListener('change', (e) => {
   selectGender = e.target.value;
-  // let catFilter = catsArr.filter(cat => isFemale(cat) === selectGender);
-  // renderCats(catFilter);
   filteredFilters();
 });
 
