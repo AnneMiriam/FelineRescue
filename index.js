@@ -24,7 +24,7 @@ function renderCats(cats) {
 function createCatCard(cat) {
   const card = document.createElement('div');
   card.classList.add('card');
-  card.setAttribute('data-cat-id', cat.id);
+  card.setAttribute('id', cat.id);
 
   const catName = document.createElement('h2');
   catName.textContent = cat.name;
@@ -32,6 +32,8 @@ function createCatCard(cat) {
   const image = document.createElement('img');
   image.src = cat.url;
   image.alt = cat.name;
+  image.className = 'image'
+  image.setAttribute('id', cat.id)
 
   const age = document.createElement('p');
   age.textContent = `Age: ${cat.age} ${cat.age2}`;
@@ -56,6 +58,20 @@ function createCatCard(cat) {
   donateButton.classList.add('button');
   donateButton.addEventListener('click', () => handleDonate(cat));
 
+  image.addEventListener('mouseover', (e) => {
+    if (e.target.className === 'image') {
+      const catId = e.target.getAttribute('id');
+      const kitty = catsArr.find(cat => cat.id == catId);
+      console.log(e.target.classList);
+      openModal(kitty)
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal()
+    }
+  });
+
   card.appendChild(catName);
   card.appendChild(image);
   card.appendChild(age);
@@ -67,6 +83,29 @@ function createCatCard(cat) {
 
   return card;
 }
+//! Modal attempt 3 helpers
+const modal = document.getElementById('cat-modal');
+const modalContent = document.getElementById('content');
+const closeBtn = document.querySelector('.close')
+
+function openModal(cat) {
+  if (cat) {
+    modal.style.display = 'block';
+    modalContent.innerHTML = `
+      <h3>${cat.name}</h3>
+      <p>${cat.age} ${cat.age2} old, ${cat.gender}, ${cat.breed}</p>
+      <p>Companion Status: ${cat['companion-status']}</p>
+      <p>Personality: ${cat.personality}</p>
+    `;
+  } else {
+    console.error('Cat info is undefined')
+  }
+  
+}
+function closeModal() {
+  modal.style.display = 'none';
+}
+
 //* Anne - update to link all dropdowns
 let filteredCats;
 function filteredFilters() {
@@ -92,8 +131,6 @@ let selectAge = '';
 
 dropdownAge.addEventListener('change', (e) => {
   selectAge = e.target.value;
-  // let filteredCats = catsArr.filter(cat => whatAge(cat) === selectAge);
-  // renderCats(filteredCats);
   filteredFilters();
 })
 //  I need a function that will return the values of kitten,
@@ -117,8 +154,6 @@ let selectCompanion = '';
 
 dropdownComp.addEventListener('change', (e) => {
   selectCompanion = e.target.value;
-  // let filterCat = catsArr.filter(cat => isCompanion(cat) === selectCompanion);
-  // renderCats(filterCat);
   filteredFilters();
 });
 
@@ -154,7 +189,7 @@ function handleAdopt(cat) {
   const conformationMessage = `CONGRATULATIONS!! You have adopted ${cat.name}!!`;
   alert(conformationMessage);
 
-  const cardRemoval = document.querySelector(`[data-cat-id="${cat.id}"]`);
+  const cardRemoval = document.querySelector(`[id="${cat.id}"]`);
   cardRemoval.remove();
 
   triggerConfetti();
@@ -173,7 +208,7 @@ function triggerConfetti() {
 
 function handleDonate(cat) {
   cat.donations = parseInt(cat.donations) + 10;
-  const card = document.querySelector(`[data-cat-id="${cat.id}"]`);
+  const card = document.querySelector(`[id="${cat.id}"]`);
   const donationsElement = card.querySelector('.donations');
   donationsElement.textContent = `Donations: $${cat.donations}`;
 }
