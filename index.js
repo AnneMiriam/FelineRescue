@@ -187,7 +187,7 @@ function handleAdopt(cat) {
   const conformationMessage = `CONGRATULATIONS!! You have adopted ${cat.name}!!`;
   alert(conformationMessage);
 
-  const cardRemoval = document.querySelector(`[id="${cat.id}"]`);
+  const cardRemoval = document.getElementById(`${cat.id}`);
   cardRemoval.remove();
 
   triggerConfetti();
@@ -206,7 +206,7 @@ function triggerConfetti() {
 
 function handleDonate(cat) {
   cat.donations = parseInt(cat.donations) + 10;
-  const card = document.querySelector(`[id="${cat.id}"]`);
+  const card = document.getElementById(`${cat.id}`);
   const donationsElement = card.querySelector('.donations');
   donationsElement.textContent = `Donations: $${cat.donations}`;
 }
